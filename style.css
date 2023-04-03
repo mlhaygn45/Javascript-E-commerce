@@ -1,0 +1,280 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.hr{
+  margin-top: 3px;
+  
+   
+}
+/* header */
+header{
+ height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orangered;
+    padding: 10px 10px;
+    position: sticky;
+    top: 0;
+  z-index: 100;
+}
+header input{
+  padding: 5px;
+}
+.btn{
+display: flex;
+gap: 20px;
+border: none;
+
+}
+
+.btn button{
+    padding: 10px 20px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+header .btn button:nth-child(1) {
+    background-color: black;
+  }
+
+  header .btn button:nth-child(2) {
+    background-color: blue;
+  }
+    
+  header .btn button:nth-child(3) {
+    background-color: red;
+  }
+
+  /* kategorliler */
+
+  .main{ 
+    padding:  30px 0px;
+
+  }
+
+  .category{
+    max-width: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+  }
+  .category-list{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 30px;
+
+
+  }
+  .category h1{
+ text-align: center;
+
+  }
+  .category p{
+     position: absolute;
+     bottom: 15px;
+     background-color: bisque;
+     border-radius: 5px;
+     width: 80px;
+     text-align: center;
+     padding: 5px;
+  }
+
+  .category p:hover{
+    background-color: gray;
+    color: wheat;
+  }
+.category img{
+  width: 100%;
+}
+
+/* product  */
+
+
+
+.product-container h1{
+ margin-top: 50px;
+ margin-bottom: 20px;
+ 
+
+}
+.product-list{
+
+  display:  flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: space-between;
+ 
+  
+  
+   
+}
+.card{
+  margin: 10px;
+   max-width: 250px;
+   padding: 15px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ transition: 0.5s;
+}
+
+.card:hover{
+
+  transform: scale(0.9);
+}
+
+
+.card img{
+  width: 100%;
+}
+.card-footer{
+  background-color: red;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.card-footer span{
+  color: coral;
+
+}
+.card-footer button{
+  background-color: darkkhaki;
+  padding: 3px;
+  border-radius: 10px;
+  border: none;
+
+
+}
+
+/* modal */
+.modal-wrapper{
+   background-color: rgba(231, 215, 215, 0.295);
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   z-index: 101;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ display: none;
+}
+.active{ 
+  display: flex;
+
+}
+.modal{
+  background-color: white;
+  width: 40%;
+  height: 60vh;
+  border-radius: 10px;
+  padding: 40px;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+
+}
+.modal i {
+  color: red;
+  font-size: 35px;
+  position: absolute;
+  cursor: pointer;
+ 
+}
+
+
+.modal-title{
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.modal #close-btn{
+  width: 50px;
+  position: absolute;
+  cursor: pointer;
+  
+}
+
+
+.item{
+  margin-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  padding: 10px 60px;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+   margin-top: 10px;
+  
+}
+.item img{
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  border-radius: 15px;
+  
+  
+}
+
+
+.modal-list{
+  margin-top: 30px;
+  
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.item .title {
+  font-size: 19px;
+}
+.item .price {
+  color: green;
+  white-space: nowrap;
+}
+
+.item img {
+  
+  border-radius: 50px;
+}
+
+.amount{
+     background-color: red;
+     border-radius: 10px;
+     color: wheat;
+}
+
+
+/* toplam */
+
+.toplam-wrapper{
+  text-align: center;
+  display: inline;
+  font-weight: bold;
+  color: red;
+  }
+  .toplam{
+    color: orange;
+    margin-top: 10px;
+    
+    
+  }
